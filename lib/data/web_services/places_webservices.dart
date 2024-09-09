@@ -48,7 +48,8 @@ class PlacesWebservices {
     }
   }
 
-   
+   // origin equals current location
+  // destination equals searched for location
   Future<dynamic> getDirections(LatLng origin, LatLng destination) async {
     try {
       Response response = await dio.get(
@@ -59,6 +60,8 @@ class PlacesWebservices {
           'key': googleAPIKey,
         },
       );
+      print("Omar I'm testing directions");
+      print(response.data);
       return response.data;
     } catch (error) {
       return Future.error("Place location error : ",

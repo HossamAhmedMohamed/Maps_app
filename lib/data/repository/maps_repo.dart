@@ -24,6 +24,7 @@ class MapsRepository {
   Future<Place> getPlaceLocation(String placeId, String sessionToken) async {
     final place =
         await placesWebservices.getPlaceLocation(placeId, sessionToken);
+    // var readyPlace = Place.fromJson(place);
     return Place.fromJson(place);
   }
 

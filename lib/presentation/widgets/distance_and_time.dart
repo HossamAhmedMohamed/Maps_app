@@ -1,6 +1,6 @@
-// ignore_for_file: prefer_typing_uninitialized_variables, prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import, use_super_parameters
+ // ignore_for_file: unused_import
 
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:maps_app/constants/my_color.dart';
 import 'package:maps_app/data/models/place_directions.dart';

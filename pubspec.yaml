@@ -45,6 +45,10 @@ dependencies:
   uuid: ^4.5.0
   flutter_polyline_points: ^2.1.0
   location: ^7.0.0
+  firebase_messaging: ^15.1.0
+  cloud_firestore: ^5.4.0
+  image_picker: ^1.1.2
+  firebase_storage: ^12.2.0
 
 
 dev_dependencies:

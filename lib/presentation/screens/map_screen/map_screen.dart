@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, unused_field, unused_local_variable, prefer_const_literals_to_create_immutables, non_constant_identifier_names, prefer_final_fields, avoid_unnecessary_containers, unused_import, avoid_types_as_parameter_names, prefer_is_empty, prefer_collection_literals, unnecessary_string_interpolations, use_super_parameters, library_private_types_in_public_api
+ // ignore_for_file: prefer_const_constructors, unused_field, unused_local_variable, prefer_const_literals_to_create_immutables, non_constant_identifier_names, prefer_final_fields, avoid_unnecessary_containers, unused_import, avoid_types_as_parameter_names, prefer_is_empty, prefer_collection_literals, unnecessary_string_interpolations, use_super_parameters, library_private_types_in_public_api
 
 import 'dart:async';
 import 'dart:ffi';

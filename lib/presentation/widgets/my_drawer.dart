@@ -8,6 +8,8 @@ import 'package:maps_app/constants/my_color.dart';
 import 'package:maps_app/constants/strings.dart';
 import 'package:maps_app/logic/phone_auth_cubit/cubit/phone_cubit.dart';
 import 'package:maps_app/main.dart';
+import 'package:maps_app/shared/get_data.dart';
+import 'package:maps_app/shared/user_image_from_database.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -26,15 +28,14 @@ class MyDrawer extends StatelessWidget {
             shape: BoxShape.rectangle,
             color: Colors.blue[100],
           ),
-          child: Image.asset(
-            "assets/images/avatar.png",
-            fit: BoxFit.cover,
-          ),
+          // child: Image.asset(
+          //   "assets/images/avatar.png",
+          //   fit: BoxFit.cover,
+          // ),
+          child: ImgUser(),
         ),
-        Text(
-          "hossam",
-          style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold),
-        ),
+
+        GetUserName(documentId: phoneCubit.getLoggedInuser().uid),
         SizedBox(
           height: 5.h,
         ),

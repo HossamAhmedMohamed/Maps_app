@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, unused_import, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables, prefer_typing_uninitialized_variables, sort_child_properties_last, non_constant_identifier_names, avoid_types_as_parameter_names, must_be_immutable, avoid_print, avoid_unnecessary_containers, unused_element
+// ignore_for_file: prefer_const_constructors, unused_import, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables, prefer_typing_uninitialized_variables, sort_child_properties_last, non_constant_identifier_names, avoid_types_as_parameter_names, must_be_immutable, avoid_print, avoid_unnecessary_containers, unused_element, unused_local_variable
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -45,13 +45,13 @@ class VerifyScreen extends StatelessWidget {
         }
         if (State is PhoneOtpVerified) {
           Navigator.pop(context);
-          Navigator.of(context).pushReplacementNamed(mapScreen);
+          Navigator.of(context).pushReplacementNamed(infoScreen);
         }
         if (State is ErrorOcurred) {
-          Navigator.pop(context);
+          // Navigator.pop(context);
           String errorMsg = (State).errorMsg;
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text(errorMsg),
+            content: Text("Not valid code"),
             backgroundColor: Colors.black,
             duration: Duration(seconds: 3),
           ));
