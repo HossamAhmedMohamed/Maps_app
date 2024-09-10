@@ -3,7 +3,7 @@ const otpScreen = '/otp-screen';
 const infoScreen = '/info-screen';
 const doneScreen = '/done-screen';
 const mapScreen = '/map-screen';
-const googleAPIKey = 'google-key';
+const googleAPIKey = 'AIzaSyCPaaCE39lELUgM2cFLdk88Y7oOJuCG_VI';
 const suggestionBaseUrl =
     'https://maps.googleapis.com/maps/api/place/autocomplete/json';
 const placeLocationBaseUrl =

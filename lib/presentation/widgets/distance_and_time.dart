@@ -1,4 +1,4 @@
- // ignore_for_file: unused_import
+ // ignore_for_file: unused_import, prefer_typing_uninitialized_variables, use_super_parameters, prefer_const_constructors
 
  import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
